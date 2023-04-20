@@ -1,0 +1,53 @@
+<p>pipes works!</p>
+<h1>Pipes</h1>
+<h2>Predefined pipes</h2>
+<div>Data:{{today|date:'dd/mm/yy'}}</div>
+<div>Number:{{value|number}}</div>
+<div>Currency:{{money|currency:'INR'}}</div>
+<div>Percentage:{{num|percent}}</div>
+<div>UpperCase:{{name1|uppercase}}
+<div>LowerCase:{{name2|lowercase}}</div>
+<div>TitleCase:{{name1|titlecase}}</div>
+<div>JSON:{{obj|json}}</div>
+<div>Keyvalue:{{obj|keyvalue|json}}</div>
+<div>{{text|customs}}</div>
+
+<h1>Hello team!</h1>
+<br>
+<div>My name:{{name}}</div>
+<br>
+<br>
+<div>From:{{from}}</div>
+<br>
+<br>
+<div>Highest Degree:{{highestDegree}}</div>
+<h1>Binding</h1>
+<h2>One way binding</h2>
+<h3><u>1.string interpolation</u></h3>
+{{Degree}}<br>
+<br>
+<h3>2.property binding</h3>
+<button class="btn btn-success" [disabled]="isdisable">Click Me!</button><br><br><br>
+<input type="text" [value]="carname">
+<p [innerText]="bus"></p>
+<br>
+<h3>event binding</h3>
+<br>
+<button type="text" (click)="clickme()">click me!</button><br> 
+<br>
+{{names}}<br>
+<br>
+<button type="text" (click)="myfunc()">clickme!</button><br>
+{{regno}}
+<br>
+<button type="text" (click)="myworld()">click me!</button>
+<br>
+<br>
+<input type="text" [value]="Name"><br>
+<input type="number" [value]=7>
+<input type="text" [(ngModel)]="Name" >
+{{Name}}
+
+
+
+
